@@ -6,7 +6,7 @@ import Input from './componets/Input';
 import TandL from './componets/TandL';
 import Actualweather from './componets/Actualweather';
 import Forecasts from './componets/Forecasts';
-import formatwData from './service/weatherService';
+import formatwData from './weatherService';
 
 function App() {
 
@@ -34,7 +34,7 @@ function App() {
  
   
   return (
-    <div className="mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
+    <div className="mx-auto  mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400">
    <TopButtons setQuery={setQuery}/>
    <Input setQuery={setQuery} setunits={setunits}/>
    { weather && (
